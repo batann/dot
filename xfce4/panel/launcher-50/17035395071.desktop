@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=music
+Comment=
+Exec=xfce4-terminal --geometry=100x50-0-0 --zoom=-1 -e  "zellij -l music.kdl"
+Icon=musikcube
+Path=
+Terminal=false
+StartupNotify=false

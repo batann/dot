@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=install
+Comment=
+Exec=xfce4-terminal -e "sudo bash /home/batan/10/postinstall/apt.sh"
+Icon=insert-object
+Path=
+Terminal=false
+StartupNotify=false

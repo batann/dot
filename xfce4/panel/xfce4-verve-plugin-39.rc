@@ -1,0 +1,16 @@
+size=10
+label=Duckgo:
+history-length=25
+use-url=true
+use-email=false
+use-dir=false
+use-wordexp=true
+use-bang=false
+use-backslash=false
+use-smartbookmark=true
+use-shell=true
+smartbookmark-url=https://duckduckgo.com/
+foreground-color=rgb(0,0,0)
+background-color=
+base-color=rgb(222,221,218)
+

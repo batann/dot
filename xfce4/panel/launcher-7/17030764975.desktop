@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Xboard
+Comment=Chess Game
+Exec=xboard
+Icon=xboard
+Path=
+Terminal=false
+StartupNotify=false

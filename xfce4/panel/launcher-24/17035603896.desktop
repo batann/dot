@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=down
+Comment=
+Exec=sudo -u batan bash 10/postinstall/download.sh
+Icon=go-down
+Path=
+Terminal=true
+StartupNotify=false

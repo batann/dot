@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=download
+Comment=
+Exec=sudo -u batan bash /home/batan/10/postinstall/downmulti.sh
+Icon=emblem-downloads
+Path=
+Terminal=true
+StartupNotify=false

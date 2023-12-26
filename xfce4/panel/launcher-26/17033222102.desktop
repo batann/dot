@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=test
+Comment=
+Exec=xfce4-terminal --geometry=60x8+200+200 --hide-menubar --hide-scrollbar --hide-borders -e 'sudo bash 10/postinstall/checkbox.sh'
+Icon=applications-utilities
+Path=
+Terminal=false
+StartupNotify=false
