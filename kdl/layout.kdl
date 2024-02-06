@@ -1,0 +1,19 @@
+// layout_file.kdl
+
+layout {
+    
+    pane split_direction="vertical" {
+        pane size="40%" command="vim" 
+        pane split_direction="horizontal"{
+pane size="30%" command="ranger"
+
+pane 
+}
+pane split_direction="horizontal"
+
+}
+
+  }
+
+
+

@@ -1,0 +1,9 @@
+// layout_file.kdl
+
+layout {
+pane command="cmus"
+    pane split_direction="horizontal" {
+        pane command="castero"
+    }
+}
+
