@@ -1,0 +1,52 @@
+#!/bin/bash
+#   ANSI CODE   ##################################################################
+Black='\033[0;30m'
+Red='\033[0;31m'
+Green='\033[0;32m'
+Blue='\033[0;34m'
+Purple='\033[0;35m'
+Cyan='\033[0;36m'
+Yellow='\033[1;33m'
+White='\033[1;37m'
+#   ANSI CODE BACKGROUND  ##################################################################
+BBlue='\e[0;104m'
+BBlack='\e[0;100m'
+RRed='\e[0;100m'
+GGreen='\e[0;100m'
+YYellow='\e[0;100m'
+BBlue='\e[0;100m'
+PPurple='\e[0;100m'
+CCyan='\e[0;100m'
+WWhite='\e[0;100m'
+NC='\033[0m'
+# Create a temporary script file
+TMP_SCRIPT=$(mktemp /tmp/countdown_script.XXXXXX)
+cat << 'EOL' > "$TMP_SCRIPT"
+#!/usr/bin/env bash
+#   ANSI CODE   ##################################################################
+Black='\033[0;30m'
+Red='\033[0;31m'
+Green='\033[0;32m'
+Blue='\033[0;34m'
+Purple='\033[0;35m'
+Cyan='\033[0;36m'
+Yellow='\033[1;33m'
+White='\033[1;37m'
+NC='\033[0m'
+
+echo -e ${Blue}       '+--------------------------------------------------+'
+echo -e ${Gray}   '             Please Enter the URL to Media          '
+echo -e ${Blue}       '+--------------------------------------------------+'
+echo -e ${NC}${Purple}
+read -p        'URL:'  abc
+/home/batan/.local/bin/yt-dlp -x --audio-format mp3 -o "%(title)s".mp3 --replace-in-metadata title " " "" $abc
+cde=$(for i in $(ls);do stat -c '%w %n' $i;done|sort -u|tail -n1|awk '{print $4}')
+def=$(echo $cde|sed 's/(.*)//g'|sed 's/\[.*\]//g'|sed 's/".*"//g'|iconv -t ASCII//TRANSLIT)
+mv $cde /home/batan/Music/$def
+/usr/bin/mpv /home/batan/Music/downloaded.wav
+
+
+
+EOL
+/usr/bin/xterm -geom 120x8+0+0 -e "sudo -u batan bash $TMP_SCRIPT"
+
