@@ -1,0 +1,14 @@
+systemctl is a powerful and essential tool for managing services in Linux distributions, allowing users to start, stop, enable, disable, and query the status of system services. However, there may be instances when certain services may be masked, preventing standard management commands from affecting them.
+
+In this tutorial, we’ll explore the process of unmasking systemctl in Linux.
+
+2. What Is systemctl unmask?
+systemctl unmask is a command used to remove the mask from a systemd unit, usually a service. It reverses the masking of a service, making it operational and accessible for system administrators.
+
+3. Why Mask and Unmask Service?
+Before diving into the unmasking process, it’s crucial to understand why a service might be masked.
+
+In Linux, administrators may mask services for security and stability measures. One technique to prevent unintentional or accidental activation or manipulation of important system services is to use masking services.
+
+On the other hand, we need to unmask a service when we require activation or to regain control over a particular service. When a service needs to be operational or configured according to specific requirements, unmasking becomes necessary. This allows administrators to approach this action with caution, consider the potential impact on system security and stability, and have the flexibility to manage and adjust services as needed.
+

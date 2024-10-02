@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+
+
+echo -e "\033[30m\033[47mRunning lc-get-podcasts on \033[31m/media/batan/100/mashpodder"
+echo -e "\033[30m\033[47m and updateing your podcast episodes to current date  \033[0m "
+
+sudo -u $USER bash /media/batan/100/mashpodder/lc-get-podcasts
+
